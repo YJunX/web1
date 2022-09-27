@@ -2,6 +2,9 @@ body{
     
 
 }
-div.h1{
-    color: blue;
+h1{
+    color: rgb(0, 123, 255);
+}
+p{
+    color: rgb(0, 136, 255);
 }

@@ -1,3 +1,44 @@
+.home-hero .two-col{
+    display: flex;
+    flex-direction:column-reverse;
+}
+.two-col{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+*{
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+*, *:before *:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.home-hero__img {
+    position: relative;
+    height: 600px;
+}
+
+.home-hero__img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.home-hero__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+img {
+    max-width: 100%;
+}
+
+
 h1{
     color: rgb(0, 123, 255);
 }

@@ -26,6 +26,84 @@
             </h2>
         </div>
     </div>
+
+    <div id="page-content">
+        <div class="cart-wrapper">
+            <div class="cart-inner">
+                <div class="cart-drawer">
+                    <div class="your-cart">
+                        <div class="modal__top-button js-close-cart">
+                            <div class="modal__close">
+                                <span class="l1"></span>
+                                <span class="l2"></span>
+                                <span class="l3"></span>
+                            </div>
+                            <span class="modal__button-label">Close</span>
+                        </div>
+                    </div>
+                    <div class="cart-header">
+                        <h4>Your Order</h4>
+                        <hr>
+                    </div>
+                    <div class="cart-main" id="cart-recommend-4">
+                        <div class="no-products">Your cart is empty</div>
+                        <div class="cart-priducts"></div>
+                        
+                        <div class="mobile-recommended">
+                            <div class="recommended-items-header" style="display: none;">
+                              You might also like
+                              <hr>
+                            </div>
+                            <div class="recommended-product" style="display: none;">
+                              <div class="container">
+
+                                <img src="//cdn.shopify.com/shopifycloud/shopify/assets/no-image-100-c91dd4bdb56513f2cbf4fc15436ca35e9d4ecd014546c8d421b1aece861dfecf_100x.gif" alt="">
+                                <div class="recommended-product__meta">
+                                  <h6 class="title"></h6>
+                                  
+              
+                                  <div class="recommended-product__price"></div>
+                                  
+                                  <button onclick="CartJS.addItem();" type="button" class="recommended-product__meta__button">Add To Cart</button>
+                                </div>  
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="cart-footer cart-masked-overflow">
+            
+
+                            <div class="cart-note">
+                              <div class="cart-note__input--wrapper" style="display: none;">
+                                <textarea class="cart-note__input" placeholder="Write delivery instructions, special requests, or anything else we need to know here." rows="4"></textarea>
+                                <div class="cart-note__saved">Saved</div>
+                              </div>
+                              <a href="#" class="cart-note__link" style="display: none;">Add a note to your order</a>
+                            </div>
+                                
+                            <div class="continue-shopping__wrapper--shipping sm-hide" style="padding: 0px 0px;text-align: left;">
+                              <a href="/collections/shop-all" class="continue-shopping--link--shipping-desktop" style="display: none;">Shipping applied at checkout</a>
+                            </div>
+                            
+                            <button class="checkout" name="checkout" style="display: none;">Checkout – <span><span class="money">$0.00</span></span></button>
+                            <img class="cart-bird" data-manual-src="//cdn.shopify.com/s/files/1/1530/0579/t/28/assets/stand-cart.gif?v=161046583601100260721637456742" alt="Cart Bird" style="display: none;">
+                            
+                            <div class="continue-shopping__wrapper" style="padding: 20px 24px;text-align: center;">
+                              <a href="/collections/shop-all" class="continue-shopping--link">Continue shopping</a>
+                            </div>
+                            <div class="continue-shopping__wrapper--shipping sm-show" style="padding: 0px 0px;text-align: center;">
+                              <a href="/collections/shop-all" class="continue-shopping--link--shipping">Shipping applied at checkout</a>
+                            </div>
+                            
+                            <div class="space-30 sm-show"></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <ul>
         <li>Shop</li>
         <li>20 years</li>

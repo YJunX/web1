@@ -439,6 +439,12 @@ a, input, select, textarea, button {
     border-radius: 0;
 }
 
+.mobile-recommended {
+    display: none;
+}
+
+
+
 .two-col{
     position: relative;
     display: grid;

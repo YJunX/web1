@@ -5,7 +5,7 @@ section{
 
 #sus-sursor{
     font-size: 40px;
-    font-family: var(--blue);
+    font-family: blue;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -17,7 +17,7 @@ section{
     width: 100%;
     height: 100%;
     z-index: 999999;
-    background: var(--blue);
+    background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,6 @@ section{
     color: #fff;
     position: relative;
     text-align: center;
-    font-family: var(--monday);
     font-weight: 400;
     width: 100%;
     transform: translateZ(0);
@@ -60,7 +59,7 @@ section{
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
-    font-family: var(--blue);
+    font-family: blue;
     font-weight: 400!important;
 }
 
@@ -82,7 +81,7 @@ section{
     transition: none!important;
     opacity: 0;
     visibility: hidden;
-    background: var(--cart-wrapper-bg-color)!important;
+    background: rgba(235, 243, 250, .9)!important;
     z-index: 1000000;
 }
 
@@ -109,14 +108,14 @@ section{
     grid-template-columns: 1fr 1fr;
     width: 600px;
     grid-template-columns: 1fr;
-    background: var(--cart-draw-bg-color)!important;
+    background: rgba(235, 243, 250, .9)!important;
     gap: 0;
 }
 
 .cart-wrapper .cart-drawer .your-cart {
     position: relative;
     padding: 0;
-    background: var(--bg-color);
+    background: white;
 }
 
 .cart-wrapper .modal__top-button {
@@ -171,7 +170,7 @@ section{
 .modal__close>span {
     width: 58px;
     height: 1px;
-    background-color: var(--blue);
+    background-color: blue;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -186,7 +185,7 @@ section{
     background: none;
     height: 120px;
     width: 100%;
-    background: var(--cart-draw-bg-color);
+    background: rgba(235, 243, 250, .9);
     z-index: 2;
 }
 

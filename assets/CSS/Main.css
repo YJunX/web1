@@ -535,6 +535,12 @@ section{
     border-bottom: solid 1px #006EB6;
 }
 
+.home-certifications .col--middle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .home-certifications .title--middle img{
     height: 100%;
     width: 100%;

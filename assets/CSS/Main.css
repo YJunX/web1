@@ -198,7 +198,7 @@ input{
 }
 
 .home-page .side--100vh{
-    height: calc(100vh - 70px - 49px);
+    height: calc(100vh - 49px);
 }
 
 .side, .side-left, .side-right{
@@ -285,7 +285,7 @@ a.button{
     content: " ";
     position: absolute;
     top: 0;
-    z-index: -1px;
+    z-index: -1;
     height: 100%;
     background: #006EB6;
     width: 100%;
@@ -294,7 +294,7 @@ a.button{
     left: 0;
 }
 
-.feature-bar .no-border{
+.feature-bar.no-border{
     border-top: none;
 }
 
@@ -304,7 +304,7 @@ a.button{
     border-top: solid 1px #006EB6;
     border-bottom: solid 1px #006EB6;
     padding: 12px;
-    min-height: 50px;
+    min-height: 20px;
 }
 
 .feature-bar__line{
@@ -352,10 +352,129 @@ a.button{
     border-radius: 10px;
 }
 
+.home-intro{
+    padding-top: 10px;
+    padding-bottom: 120px;
+    padding-bottom: solid 1px #006eb6;
+    position: relative;
+}
+
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.home-intro .container .content{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #006EB6;
+}
+
+.content{
+    position: relative;
+}
+
+.home-intro .container .content .intro-bird{
+    width: auto;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -40px;
+}
+
+.space-20{
+    display: block;
+    height: 20px;
+}
+
+.space-60{
+    display: block;
+    height: 60px;
+}
+
+.large{
+    font-size: 20px;
+    line-height: 30px;
+    color: #006EB6;
+    margin-bottom: 20px;
+}
+
+.home-intro .coaster-button{
+    position: absolute;
+    bottom: -40px;
+    right: 190px;
+}
+
+.coaster-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    z-index: 5;
+    color: #006EB6;
+    text-decoration: none;
+    transform: rotate(10deg);
+}
+
+.coaster-button__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: none;  
+    width: 100%;
+    height: 100%; 
+}
+
+.coaster-button__bg path{
+    transition: all .3 ease;
+}
+
+.coaster-button__label{
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.coaster-button__arrow{
+    transition: all .3 ease;
+}
+
+
 section{
     pointer-events: auto;
     padding: 0;
 }
+
+.title-bar{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #006EB6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #006EB6;
+    border-bottom: solid 1px #006EB6;
+    font-size: 2rem;
+    line-height: 3.8rem;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
 
 
 li{
@@ -389,13 +508,13 @@ h1{
 }
 
 h2{
-    font-size: 5rem;
-    line-height: 5.8rem;
+    font-size: 3rem;
+    line-height: 4.8rem;
 }
 
 h3 {
-    font-size: 4rem;
-    line-height: 4.9rem;
+    font-size: 5rem;
+    line-height: 5.9rem;
 }
 
 h4 {
@@ -424,6 +543,7 @@ p {
 
 img{
     width:100%;
+    max-width: 100%;
 }
 
 

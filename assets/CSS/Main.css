@@ -474,11 +474,111 @@ section{
     padding-right: 24px;
 }
 
+.home-certifications{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 1px;
+    background: #006EB6;
+}
+
+.home-certifications .col--left {
+    background: #ffffff;
+}
+
+.home-certifications .col--right {
+    background: #ffffff;
+}
+
+.title, .col-left, .col-right{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.value-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    border-bottom: solid 1px #006EB6;
+    text-align: center;
+    padding: 40px;
+}
+
+.value-item .value-icon{
+    height: 80px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.value-item p{
+    margin-bottom:  0;
+}
 
 
+.home-certifications .title--middle{
+    background: #006EB6;
+    max-height: 890px;
+    overflow: hidden;
+    border-bottom: solid 1px #006EB6;
+}
+
+
+
+.home-certifications .col--middle{
+    background: #006EB6;
+    max-height: 890px;
+    overflow: hidden;
+    border-bottom: solid 1px #006EB6;
+}
+
+.home-certifications .title--middle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.home-certifications .col--middle .parallax-img{
+    height: 100%;
+}
+
+.parallax-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-img .image{
+    position: absolute;
+    top: -8%;
+    left: -8%;
+    right: -8%;
+    bottom: -8%;
+    max-height: none;
+}
+
+.parallax-img .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lg-show, .md-show, .sm-show{
+    display: none !important;
+}
+
+.home-certifications .title{
+    background: #fff;
+}
 
 li{
-
     margin-bottom: 5px;
 }
 

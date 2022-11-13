@@ -584,6 +584,191 @@ section{
     background: #fff;
 }
 
+
+.featured-goods{
+    border-bottom: solid 1px #006EB6;
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 1px;
+    padding-top: 70px;
+    margin-top: calc(-1*70px);
+} 
+
+.featured-goods .col--left{
+    position: relative;
+    border-right: solid 1px #006EB6;
+}
+
+.featured-goods .title{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.featured-goods__sticky{
+    height: 620px;
+    position: relative;
+}
+
+.featured-goods .col--left h3{
+    margin: 0;
+    font-family: "Untitled", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #006EB6;
+    left: 50%;
+    top: 45px;
+    font-size: 3rem;
+    line-height: 3.9rem;
+    letter-spacing: -.1px;
+    transform: translate(-50%) rotate(-90deg) translate(-50%);
+    position: absolute;
+    white-space: nowrap;
+}
+
+.featured-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    padding: 70px;
+    border-bottom: solid 1px #006EB6;
+}
+
+.featured-product-card{
+    text-align: center;
+    cursor: pointer;
+}
+
+.featured-product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.featured-product-card .product-title{
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: .1px;
+}
+
+.sapce-10{
+    display: block;
+    height: 10px;
+}
+
+.featured-product-card .featured-product__meta{
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: .1px;
+}
+
+.featured-product-card .featured-product__price{
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: .1px;
+}
+
+.featured-product-card .buy-buttons{
+    max-width: 255px;
+    margin: 20px auto auto;
+}
+
+.buy-buttons{
+    background:#ebf3fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    border: solid 1px #ebf3fa;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    margin-top: 20px;
+}
+
+.buy-buttons a{
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.button-slide-bg:before, .button-slide-bg--white:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background: #006EB6;
+    width: 100%;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    left: 0;
+}
+
+.button-slide-bg, .button-slide-bg--white {
+    position: relative;
+    overflow: hidden!important;
+    z-index: 5;
+    display: inline-block;
+    background-color: #fff!important;
+}
+
+.featured-bar{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.space-30{
+    display: block;
+    height: 30px;
+}
+
+.squiggle-button {
+    position: relative;
+    display: inline-block;
+    color: #006EB6;
+    text-decoration: none;
+    font-family: "Untitled";
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.squiggle-button {
+    position: relative;
+    display: inline-block;
+    color: #006EB6;
+    text-decoration: none;
+    font-family: sans-serif;
+    overflow: hidden;
+    padding-bottom: 3px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.quiz__form .klaviyo_submit_button, .squiggle-button:after {
+    background-image: url(https://cdn.shopify.com/s/files/1/1530/0579/t/28/assets/squiggle.svg?v=1496649…);
+}
+
+.squiggle-button:after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: -1000px;
+    right: 0;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: auto;
+    transform: translate(0);
+    animation: squiggle 30s linear infinite;
+    animation-play-state: paused;
+}
+
+
 li{
     margin-bottom: 5px;
 }
@@ -648,10 +833,14 @@ p {
 }
 
 img{
-    width:100%;
+
     max-width: 100%;
 }
 
+a{
+    color: #006EB6;
+    text-decoration: none;
+}
 
 *{
     font-family: inherit;

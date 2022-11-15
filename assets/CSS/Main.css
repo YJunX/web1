@@ -23,6 +23,7 @@ body{
         z-index: 5;
     }
 
+
     .nav__logo>a{
         display: block;
         font-size: 0;
@@ -802,6 +803,149 @@ section{
     background-size: cover;
 }
 
+.long-game .coaster-button{
+    position: absolute;
+    top: -239px;
+    right: 0px;
+}
+
+.text-switcher__mask, .text-switcher__word{
+    line-height: 1em;
+}
+.text-switcher__mask{
+    overflow: hidden;
+    padding: 10px;
+    margin: -10px;
+    transform: translate(0) translateY(0) translateZ(0);
+}
+
+.text-switcher__loaded .text-switcher__item{
+    opacity: 1;
+    visibility: visible;
+}
+
+.long-game{
+    position: relative;
+    padding: 70px;
+    padding-top: 0;
+    border-bottom:solid 1px #006EB6 ;
+}
+
+.long-game h2{
+    font-size: 4.8rem;
+    line-height: 5rem;
+}
+
+.text-switcher__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-switcher{
+    width: 100%;
+}
+
+.location-bar{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #006EB6;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    width: 100%;
+    background: #ebf3fa;
+    border-bottom: solid 1px #006EB6;
+}
+
+.location-bar .container .location-inner{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 250px;
+    gap: 100px;
+}
+
+/*.location-slider{
+    position: relative;
+    display: flex;
+    border-bottom: solid 1px #006EB6;
+    background: #ebf3fa;
+}
+
+.location-silde__tabs{
+    display: flex;
+}*/
+
+.partner-highlight{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 1;
+    background: #006EB6;
+    overflow: hidden;
+    border-bottom: solid 1px #006EB6;
+}
+
+
+.partner-bird{
+    position: absolute;
+    bottom: 0px;
+    left: -90px;
+    z-index: 1;
+    height: 190px;
+    width: auto;
+}
+
+.partner-highlight .sided-left h2{
+    z-index: 3;
+}
+
+.partner-highlight .sided-right{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 700px;
+    z-index: 3;
+}
+
+.partner-highlight .sided-left{
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding: 70px;
+}
+
+.partner-highlight .sided-left, .partner-highlight .sided-left h5{
+    z-index: 3;
+}
+
+a.partner-link{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+}
+
+a.partner-link .meta{
+    position: relative;
+    width: 100%;
+}
+.sided, .sided-left, .sided-right{
+    position: relative;
+}
+
+.sapce-15{
+    display: block;
+    height: 15px;
+}
+
 
 li{
     margin-bottom: 5px;
@@ -891,6 +1035,6 @@ a:visited, a:hover, a:active {
 }
 
 a, input, select, textarea, button {
-   /* -webkit-appearance: none;*/
+    -webkit-appearance: none;
     border-radius: 0;
 }

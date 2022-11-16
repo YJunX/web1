@@ -1,5 +1,3 @@
-
-
 body{
     background: white;
     color: #006EB6;
@@ -8,7 +6,6 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
     min-height: 100vh;
-
 }
 @media (min-width:1000px) {
     .nav__logo{
@@ -20,15 +17,11 @@ body{
         transform: translate3d(-50%,-50%,0);
         z-index: 5;
     }
-
-
     .nav__logo>a{
         display: block;
         font-size: 0;
         text-decoration: none;
-    }  
-
-    
+    }      
 }
 .navbar{
     position: fixed;
@@ -873,10 +866,70 @@ section{
     background: #ebf3fa;
 }
 
-.location-silde__tabs{
-    display: flex;
+
+.location-slider__tab-label{
+    font-size: 32px;
+    letter-spacing: -.1px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 60px;
 }
 
+.location-slider__tab {
+    width: 120px;
+    height: calc(100vh - 62px );
+    display: flex;
+    align-items: center;
+    border-right: solid 1px #006EB6;
+    border-left: solid 1px transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+
+.location-slider__tab-content {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    z-index: 99;
+    padding: 50px 50px 50px 190px;
+    width: 79.9107vw;
+
+}
+
+.location-slider__col-left img {
+    width: 100%;
+    display: block;
+}
+
+.location-slider--mobile .location-slider__content h2 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.location-slider .location-slider__content-wrapper, .location-slider .location-slider__col-left, .location-slider .location-slider__tab-content {
+    height: 100%;
+}
+.location-slider .location-slider__col-left {
+    flex-basis: 65%;
+    position: relative;
+}
+.location-slider .location-slider__col-left .img-wrapper {
+    height: 100%;
+}
+.location-slider .location-slider__col-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .partner-highlight{
     position: relative;
     display: grid;
@@ -886,8 +939,6 @@ section{
     overflow: hidden;
     border-bottom: solid 1px #006EB6;
 }
-
-
 .partner-bird{
     position: absolute;
     bottom: 0px;
@@ -944,19 +995,24 @@ a.partner-link .meta{
     height: 15px;
 }
 
+.featured-articles{
+    position: relative;
+    padding: 70px;
+    width: 100%;
+}
 
 
+.article-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.featured-articles .container .content a.button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 .end-footer{
     background: #ffffff;
@@ -1099,10 +1155,6 @@ a.link:before {
     width: 100%;
     object-fit: contain;
 }
-
-
-
-
 
 li{
     margin-bottom: 5px;

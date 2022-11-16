@@ -1064,7 +1064,7 @@ a.link:before {
     grid-area: 1/4/4/5;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    background: var(--white);
+    background: #ffffff;
     gap: 1px;
 }
 
@@ -1078,6 +1078,14 @@ a.link:before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70px;
+}
+
+.footer-social-icon {
+    background: #006EB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .footer-social-icon .social-icon-link {

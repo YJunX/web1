@@ -5,11 +5,17 @@ return await response.json()
    
 
 
-(function(){
-    $("nav > li").click(function(){
-        var $sub = $(this).children(".sub");
-        $sub.slideDown();
-        var $Othersub = $(this).siblings().children(".sub");
-        $Othersub.slideUp();
-    });
-});
+
+
+
+   function showmenu(id) {
+    var list = document.getElementById("list"+id);
+    var menu = document.getElementById("menu"+id)
+    if (list.style.display=="none") {
+     document.getElementById("list"+id).style.display="block";
+     menu.className = "title1";
+    }else {
+     document.getElementById("list"+id).style.display="none";
+     menu.className = "title";
+    }
+   } 

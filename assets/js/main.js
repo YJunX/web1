@@ -1,8 +1,13 @@
-const fetchImage = (async () => {
-const response = await fetch('https://api.unsplash.com/search/photos/?query=coffee&client_id=TcDkidMYRW8fBs4kaxv2Wblm8XatJCrvmpOPBd_EI-Y')
-return await response.json()
-})()
-   
+const BASE_URL =`https://api.unsplash.com`;
+fetch(`${BASE_URL}/search/photos/?query=coffee&client_id=TcDkidMYRW8fBs4kaxv2Wblm8XatJCrvmpOPBd_EI-Y`)
+.then(Response => Response.json())
+.then(data =>{
+   let img_url =  data["results"][0]["urls"]["regular"];
+
+   let img = document.createElement("img");
+   img.scr =results["urls"]["regular"]; 
+   document.querySelector(".home-page__img").append(img);
+})
 
 
 

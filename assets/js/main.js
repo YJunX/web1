@@ -7,7 +7,7 @@ fetch(`${BASE_URL}/search/photos/?query=coffee&client_id=TcDkidMYRW8fBs4kaxv2Wbl
    let img = document.createElement("img");
    img.scr =results["urls"]["regular"]; 
    document.querySelector(".home-page__img").append(img);
-})
+});
 
 
 

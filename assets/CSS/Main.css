@@ -1050,6 +1050,7 @@ a.link:before {
     grid-template-rows: 1fr 1fr 1fr;
     background: #ffffff;
     gap: 1px;
+    
 }
 
 .footer-sides-7 {
@@ -1178,19 +1179,19 @@ a, input, select, textarea, button {
 }
 
 
-#nav{
+#navbar{
     margin:10px;
     text-align:center;
     line-height:25px;
-    width:200px;
+    width: 1420px;
 }
-.title{
+.title1{
     background:#336699;
     color:#fff;
     border-bottom:1px solid #fff;
     cursor:pointer;
 }
-.title1{
+.title2{
     background:#888;
     color:#000;
     border-bottom:1px solid #666;
@@ -1200,4 +1201,10 @@ a, input, select, textarea, button {
     color:#336699;
     background:#ddd;
     border-bottom:1px solid #fff;
+}
+.navbar-line{
+    position: relative;
+    display: flex;
+    border-bottom: solid 1px #006EB6;
+    background: #ebf3fa;
 }

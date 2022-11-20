@@ -13,9 +13,9 @@ return await response.json()
     var menu = document.getElementById("menu"+id)
     if (list.style.display=="none") {
      document.getElementById("list"+id).style.display="block";
-     menu.className = "title1";
+     menu.className = "title2";
     }else {
      document.getElementById("list"+id).style.display="none";
-     menu.className = "title";
+     menu.className = "titl1";
     }
    } 
